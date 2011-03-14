@@ -1,0 +1,228 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{AC3F3FE6-71D1-4297-823C-62F4BEA93320}</ProjectGuid>
+    <RootNamespace>pcasys</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SolutionDir)$(Configuration)\$(Platform)\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(SolutionDir)$(Configuration)\$(Platform)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Configuration)\$(Platform)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Configuration)\$(Platform)\</IntDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SolutionDir)$(Configuration)\$(Platform)\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(SolutionDir)$(Configuration)\$(Platform)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Configuration)\$(Platform)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Configuration)\$(Platform)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>../../../pcasys/include;../../../an2k/include;../../../commonnbis/include;../../../imgtools/include;../../../ijg/src/lib/jpegb;../../../jpeg2k/src/lib/jasper/src/libjasper/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;_CRT_SECURE_NO_WARNINGS;JAS_WIN_MSVC_BUILD;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>../../../pcasys/include;../../../an2k/include;../../../commonnbis/include;../../../imgtools/include;../../../ijg/src/lib/jpegb;../../../jpeg2k/src/lib/jasper/src/libjasper/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;_CRT_SECURE_NO_WARNINGS;JAS_WIN_MSVC_BUILD;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>TARGET_OS;WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <AdditionalIncludeDirectories>../../../pcasys/include;../../../an2k/include;../../../commonnbis/include;../../../imgtools/include;../../../ijg/src/lib/jpegb;../../../jpeg2k/src/lib/jasper/src/libjasper/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <PreprocessorDefinitions>TARGET_OS;WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <AdditionalIncludeDirectories>../../../pcasys/include;../../../an2k/include;../../../commonnbis/include;../../../imgtools/include;../../../ijg/src/lib/jpegb;../../../jpeg2k/src/lib/jasper/src/libjasper/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\pcasys\src\lib\mlp\accum.c" />
+    <ClCompile Include="..\..\..\pcasys\src\lib\mlp\acs.c" />
+    <ClCompile Include="..\..\..\pcasys\src\lib\mlp\acsmaps.c" />
+    <ClCompile Include="..\..\..\pcasys\src\lib\mlp\boltz.c" />
+    <ClCompile Include="..\..\..\pcasys\src\lib\mlp\ch_bprms.c" />
+    <ClCompile Include="..\..\..\pcasys\src\lib\mlp\csopiwh.c" />
+    <ClCompile Include="..\..\..\pcasys\src\lib\mlp\cvr.c" />
+    <ClCompile Include="..\..\..\pcasys\src\lib\mlp\cwrite.c" />
+    <ClCompile Include="..\..\..\pcasys\src\lib\mlp\e_and_g.c" />
+    <ClCompile Include="..\..\..\pcasys\src\lib\mlp\eb.c" />
+    <ClCompile Include="..\..\..\pcasys\src\lib\mlp\eb_cat_e.c" />
+    <ClCompile Include="..\..\..\pcasys\src\lib\mlp\eb_cat_w.c" />
+    <ClCompile Include="..\..\..\pcasys\src\lib\mlp\ef.c" />
+    <ClCompile Include="..\..\..\pcasys\src\lib\mlp\endopt.c" />
+    <ClCompile Include="..\..\..\pcasys\src\lib\mlp\fsaso.c" />
+    <ClCompile Include="..\..\..\pcasys\src\lib\mlp\get_phr.c" />
+    <ClCompile Include="..\..\..\pcasys\src\lib\mlp\getpat.c" />
+    <ClCompile Include="..\..\..\pcasys\src\lib\mlp\got_blk.c" />
+    <ClCompile Include="..\..\..\pcasys\src\lib\mlp\got_c.c" />
+    <ClCompile Include="..\..\..\pcasys\src\lib\mlp\got_nc_c.c" />
+    <ClCompile Include="..\..\..\pcasys\src\lib\mlp\is_we.c" />
+    <ClCompile Include="..\..\..\pcasys\src\lib\mlp\lbfgs.c" />
+    <ClCompile Include="..\..\..\pcasys\src\lib\mlp\lbfgs_dr.c" />
+    <ClCompile Include="..\..\..\pcasys\src\lib\mlp\lgl_pnm.c" />
+    <ClCompile Include="..\..\..\pcasys\src\lib\mlp\lgl_tbl.c" />
+    <ClCompile Include="..\..\..\pcasys\src\lib\mlp\little.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\pcasys\src\lib\mlp\lng2shrt.c" />
+    <ClCompile Include="..\..\..\pcasys\src\lib\mlp\mlpcla.c" />
+    <ClCompile Include="..\..\..\pcasys\src\lib\mlp\mtch_pnm.c" />
+    <ClCompile Include="..\..\..\pcasys\src\lib\mlp\neverset.c" />
+    <ClCompile Include="..\..\..\pcasys\src\lib\mlp\optchk.c" />
+    <ClCompile Include="..\..\..\pcasys\src\lib\mlp\optwts.c" />
+    <ClCompile Include="..\..\..\pcasys\src\lib\mlp\pat_io.c" />
+    <ClCompile Include="..\..\..\pcasys\src\lib\mlp\rd_cwts.c" />
+    <ClCompile Include="..\..\..\pcasys\src\lib\mlp\rd_words.c" />
+    <ClCompile Include="..\..\..\pcasys\src\lib\mlp\rprt_prs.c" />
+    <ClCompile Include="..\..\..\pcasys\src\lib\mlp\runmlp.c" />
+    <ClCompile Include="..\..\..\pcasys\src\lib\mlp\scanspec.c" />
+    <ClCompile Include="..\..\..\pcasys\src\lib\mlp\scg.c" />
+    <ClCompile Include="..\..\..\pcasys\src\lib\mlp\set_fpw.c" />
+    <ClCompile Include="..\..\..\pcasys\src\lib\mlp\st_nv_ok.c" />
+    <ClCompile Include="..\..\..\pcasys\src\lib\mlp\strm_fmt.c" />
+    <ClCompile Include="..\..\..\pcasys\src\lib\mlp\target.c" />
+    <ClCompile Include="..\..\..\pcasys\src\lib\mlp\tsp_w.c" />
+    <ClCompile Include="..\..\..\pcasys\src\lib\mlp\uni.c" />
+    <ClCompile Include="..\..\..\pcasys\src\lib\mlp\wts.c" />
+    <ClCompile Include="..\..\..\pcasys\src\lib\pcautil\imgdec.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\pcasys\src\lib\pcautil\io_c.c" />
+    <ClCompile Include="..\..\..\pcasys\src\lib\pcautil\io_m.c" />
+    <ClCompile Include="..\..\..\pcasys\src\lib\pcautil\io_v.c" />
+    <ClCompile Include="..\..\..\pcasys\src\lib\pcautil\little.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)%(Filename)1.obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)%(Filename)1.obj</ObjectFileName>
+      <XMLDocumentationFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)%(Filename)1.xdc</XMLDocumentationFileName>
+      <XMLDocumentationFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)%(Filename)1.xdc</XMLDocumentationFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)%(Filename)1.obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)%(Filename)1.obj</ObjectFileName>
+      <XMLDocumentationFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)%(Filename)1.xdc</XMLDocumentationFileName>
+      <XMLDocumentationFileName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)%(Filename)1.xdc</XMLDocumentationFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\..\pcasys\src\lib\pcautil\optrws_r.c" />
+    <ClCompile Include="..\..\..\pcasys\src\lib\pcautil\swapbyte.c" />
+    <ClCompile Include="..\..\..\pcasys\src\lib\pcautil\table.c" />
+    <ClCompile Include="..\..\..\pcasys\src\lib\pca\combine.c" />
+    <ClCompile Include="..\..\..\pcasys\src\lib\pca\eigen.c" />
+    <ClCompile Include="..\..\..\pcasys\src\lib\pca\enhnc.c" />
+    <ClCompile Include="..\..\..\pcasys\src\lib\pca\gr_cm.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\pcasys\src\lib\pca\grphcs.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\pcasys\src\lib\pca\inits.c" />
+    <ClCompile Include="..\..\..\pcasys\src\lib\pca\mlp_sing.c" />
+    <ClCompile Include="..\..\..\pcasys\src\lib\pca\pnn.c" />
+    <ClCompile Include="..\..\..\pcasys\src\lib\pca\pseudo.c" />
+    <ClCompile Include="..\..\..\pcasys\src\lib\pca\r92.c" />
+    <ClCompile Include="..\..\..\pcasys\src\lib\pca\r92a.c" />
+    <ClCompile Include="..\..\..\pcasys\src\lib\pca\readfing.c" />
+    <ClCompile Include="..\..\..\pcasys\src\lib\pca\results.c" />
+    <ClCompile Include="..\..\..\pcasys\src\lib\pca\ridge.c" />
+    <ClCompile Include="..\..\..\pcasys\src\lib\pca\sgmnt.c" />
+    <ClCompile Include="..\..\..\pcasys\src\lib\pca\trnsfrm.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

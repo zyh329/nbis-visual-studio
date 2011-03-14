@@ -1,0 +1,283 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{ADD9D35F-32E7-4D6B-B7D8-B40346C05F46}</ProjectGuid>
+    <RootNamespace>commonnbis</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SolutionDir)$(Configuration)\$(Platform)\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(SolutionDir)$(Configuration)\$(Platform)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Configuration)\$(Platform)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Configuration)\$(Platform)\</IntDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SolutionDir)$(Configuration)\$(Platform)\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(SolutionDir)$(Configuration)\$(Platform)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Configuration)\$(Platform)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Configuration)\$(Platform)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>../../../commonnbis/include;../../../imgtools/include;../../../pcasys/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>../../../commonnbis/include;../../../imgtools/include;../../../pcasys/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <AdditionalIncludeDirectories>../../../commonnbis/include;../../../imgtools/include;../../../pcasys/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <AdditionalIncludeDirectories>../../../commonnbis/include;../../../imgtools/include;../../../pcasys/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\commonnbis\src\lib\cblas\isamax.c" />
+    <ClCompile Include="..\..\..\commonnbis\src\lib\cblas\lsame.c" />
+    <ClCompile Include="..\..\..\commonnbis\src\lib\cblas\sasum.c" />
+    <ClCompile Include="..\..\..\commonnbis\src\lib\cblas\saxpy.c" />
+    <ClCompile Include="..\..\..\commonnbis\src\lib\cblas\scopy.c" />
+    <ClCompile Include="..\..\..\commonnbis\src\lib\cblas\sdot.c" />
+    <ClCompile Include="..\..\..\commonnbis\src\lib\cblas\sgemm.c" />
+    <ClCompile Include="..\..\..\commonnbis\src\lib\cblas\sgemv.c" />
+    <ClCompile Include="..\..\..\commonnbis\src\lib\cblas\sger.c" />
+    <ClCompile Include="..\..\..\commonnbis\src\lib\cblas\snrm2.c" />
+    <ClCompile Include="..\..\..\commonnbis\src\lib\cblas\sscal.c" />
+    <ClCompile Include="..\..\..\commonnbis\src\lib\cblas\sswap.c" />
+    <ClCompile Include="..\..\..\commonnbis\src\lib\cblas\ssymv.c" />
+    <ClCompile Include="..\..\..\commonnbis\src\lib\cblas\ssyr2.c" />
+    <ClCompile Include="..\..\..\commonnbis\src\lib\cblas\ssyr2k.c" />
+    <ClCompile Include="..\..\..\commonnbis\src\lib\cblas\strmm.c" />
+    <ClCompile Include="..\..\..\commonnbis\src\lib\cblas\strmv.c" />
+    <ClCompile Include="..\..\..\commonnbis\src\lib\cblas\xerbla.c" />
+    <ClCompile Include="..\..\..\commonnbis\src\lib\clapck\ilaenv.c" />
+    <ClCompile Include="..\..\..\commonnbis\src\lib\clapck\lsame.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)%(Filename)1.obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)%(Filename)1.obj</ObjectFileName>
+      <XMLDocumentationFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)%(Filename)1.xdc</XMLDocumentationFileName>
+      <XMLDocumentationFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)%(Filename)1.xdc</XMLDocumentationFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)%(Filename)1.obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)%(Filename)1.obj</ObjectFileName>
+      <XMLDocumentationFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)%(Filename)1.xdc</XMLDocumentationFileName>
+      <XMLDocumentationFileName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)%(Filename)1.xdc</XMLDocumentationFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\..\commonnbis\src\lib\clapck\slacpy.c" />
+    <ClCompile Include="..\..\..\commonnbis\src\lib\clapck\slae2.c" />
+    <ClCompile Include="..\..\..\commonnbis\src\lib\clapck\slaebz.c" />
+    <ClCompile Include="..\..\..\commonnbis\src\lib\clapck\slaev2.c" />
+    <ClCompile Include="..\..\..\commonnbis\src\lib\clapck\slagtf.c" />
+    <ClCompile Include="..\..\..\commonnbis\src\lib\clapck\slagts.c" />
+    <ClCompile Include="..\..\..\commonnbis\src\lib\clapck\slamc1.c" />
+    <ClCompile Include="..\..\..\commonnbis\src\lib\clapck\slamc2.c" />
+    <ClCompile Include="..\..\..\commonnbis\src\lib\clapck\slamc3.c" />
+    <ClCompile Include="..\..\..\commonnbis\src\lib\clapck\slamc4.c" />
+    <ClCompile Include="..\..\..\commonnbis\src\lib\clapck\slamc5.c" />
+    <ClCompile Include="..\..\..\commonnbis\src\lib\clapck\slamch.c" />
+    <ClCompile Include="..\..\..\commonnbis\src\lib\clapck\slanst.c" />
+    <ClCompile Include="..\..\..\commonnbis\src\lib\clapck\slansy.c" />
+    <ClCompile Include="..\..\..\commonnbis\src\lib\clapck\slapy2.c" />
+    <ClCompile Include="..\..\..\commonnbis\src\lib\clapck\slarf.c" />
+    <ClCompile Include="..\..\..\commonnbis\src\lib\clapck\slarfb.c" />
+    <ClCompile Include="..\..\..\commonnbis\src\lib\clapck\slarfg.c" />
+    <ClCompile Include="..\..\..\commonnbis\src\lib\clapck\slarft.c" />
+    <ClCompile Include="..\..\..\commonnbis\src\lib\clapck\slarnv.c" />
+    <ClCompile Include="..\..\..\commonnbis\src\lib\clapck\slartg.c" />
+    <ClCompile Include="..\..\..\commonnbis\src\lib\clapck\slaruv.c" />
+    <ClCompile Include="..\..\..\commonnbis\src\lib\clapck\slascl.c" />
+    <ClCompile Include="..\..\..\commonnbis\src\lib\clapck\slaset.c" />
+    <ClCompile Include="..\..\..\commonnbis\src\lib\clapck\slasr.c" />
+    <ClCompile Include="..\..\..\commonnbis\src\lib\clapck\slasrt.c" />
+    <ClCompile Include="..\..\..\commonnbis\src\lib\clapck\slassq.c" />
+    <ClCompile Include="..\..\..\commonnbis\src\lib\clapck\slatrd.c" />
+    <ClCompile Include="..\..\..\commonnbis\src\lib\clapck\sorg2l.c" />
+    <ClCompile Include="..\..\..\commonnbis\src\lib\clapck\sorg2r.c" />
+    <ClCompile Include="..\..\..\commonnbis\src\lib\clapck\sorgql.c" />
+    <ClCompile Include="..\..\..\commonnbis\src\lib\clapck\sorgqr.c" />
+    <ClCompile Include="..\..\..\commonnbis\src\lib\clapck\sorgtr.c" />
+    <ClCompile Include="..\..\..\commonnbis\src\lib\clapck\sorm2l.c" />
+    <ClCompile Include="..\..\..\commonnbis\src\lib\clapck\sorm2r.c" />
+    <ClCompile Include="..\..\..\commonnbis\src\lib\clapck\sormql.c" />
+    <ClCompile Include="..\..\..\commonnbis\src\lib\clapck\sormqr.c" />
+    <ClCompile Include="..\..\..\commonnbis\src\lib\clapck\sormtr.c" />
+    <ClCompile Include="..\..\..\commonnbis\src\lib\clapck\sstebz.c" />
+    <ClCompile Include="..\..\..\commonnbis\src\lib\clapck\sstein.c" />
+    <ClCompile Include="..\..\..\commonnbis\src\lib\clapck\ssteqr.c" />
+    <ClCompile Include="..\..\..\commonnbis\src\lib\clapck\ssterf.c" />
+    <ClCompile Include="..\..\..\commonnbis\src\lib\clapck\ssyevx.c" />
+    <ClCompile Include="..\..\..\commonnbis\src\lib\clapck\ssytd2.c" />
+    <ClCompile Include="..\..\..\commonnbis\src\lib\clapck\ssytrd.c" />
+    <ClCompile Include="..\..\..\commonnbis\src\lib\f2c\pow_ri.c" />
+    <ClCompile Include="..\..\..\commonnbis\src\lib\f2c\r_sign.c" />
+    <ClCompile Include="..\..\..\commonnbis\src\lib\f2c\s_cat.c" />
+    <ClCompile Include="..\..\..\commonnbis\src\lib\f2c\s_cmp.c" />
+    <ClCompile Include="..\..\..\commonnbis\src\lib\f2c\s_copy.c" />
+    <ClCompile Include="..\..\..\commonnbis\src\lib\fet\allocfet.c" />
+    <ClCompile Include="..\..\..\commonnbis\src\lib\fet\delfet.c" />
+    <ClCompile Include="..\..\..\commonnbis\src\lib\fet\extrfet.c" />
+    <ClCompile Include="..\..\..\commonnbis\src\lib\fet\freefet.c" />
+    <ClCompile Include="..\..\..\commonnbis\src\lib\fet\lkupfet.c" />
+    <ClCompile Include="..\..\..\commonnbis\src\lib\fet\nistcom.c" />
+    <ClCompile Include="..\..\..\commonnbis\src\lib\fet\printfet.c" />
+    <ClCompile Include="..\..\..\commonnbis\src\lib\fet\readfet.c" />
+    <ClCompile Include="..\..\..\commonnbis\src\lib\fet\strfet.c" />
+    <ClCompile Include="..\..\..\commonnbis\src\lib\fet\updatfet.c" />
+    <ClCompile Include="..\..\..\commonnbis\src\lib\fet\writefet.c" />
+    <ClCompile Include="..\..\..\commonnbis\src\lib\fft\cfftb.c" />
+    <ClCompile Include="..\..\..\commonnbis\src\lib\fft\cfftb1.c" />
+    <ClCompile Include="..\..\..\commonnbis\src\lib\fft\cfftf.c" />
+    <ClCompile Include="..\..\..\commonnbis\src\lib\fft\cfftf1.c" />
+    <ClCompile Include="..\..\..\commonnbis\src\lib\fft\cffti.c" />
+    <ClCompile Include="..\..\..\commonnbis\src\lib\fft\cffti1.c" />
+    <ClCompile Include="..\..\..\commonnbis\src\lib\fft\fft2dr.c" />
+    <ClCompile Include="..\..\..\commonnbis\src\lib\fft\passb.c" />
+    <ClCompile Include="..\..\..\commonnbis\src\lib\fft\passb2.c" />
+    <ClCompile Include="..\..\..\commonnbis\src\lib\fft\passb3.c" />
+    <ClCompile Include="..\..\..\commonnbis\src\lib\fft\passb4.c" />
+    <ClCompile Include="..\..\..\commonnbis\src\lib\fft\passb5.c" />
+    <ClCompile Include="..\..\..\commonnbis\src\lib\fft\passf.c" />
+    <ClCompile Include="..\..\..\commonnbis\src\lib\fft\passf2.c" />
+    <ClCompile Include="..\..\..\commonnbis\src\lib\fft\passf3.c" />
+    <ClCompile Include="..\..\..\commonnbis\src\lib\fft\passf4.c" />
+    <ClCompile Include="..\..\..\commonnbis\src\lib\fft\passf5.c" />
+    <ClCompile Include="..\..\..\commonnbis\src\lib\ioutil\dataio.c" />
+    <ClCompile Include="..\..\..\commonnbis\src\lib\ioutil\fileexst.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\commonnbis\src\lib\ioutil\filehead.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\commonnbis\src\lib\ioutil\fileroot.c" />
+    <ClCompile Include="..\..\..\commonnbis\src\lib\ioutil\filesize.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\commonnbis\src\lib\ioutil\filetail.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\commonnbis\src\lib\ioutil\findfile.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\commonnbis\src\lib\ioutil\newext.c" />
+    <ClCompile Include="..\..\..\commonnbis\src\lib\ioutil\readutil.c" />
+    <ClCompile Include="..\..\..\commonnbis\src\lib\util\bres.c" />
+    <ClCompile Include="..\..\..\commonnbis\src\lib\util\bubble.c" />
+    <ClCompile Include="..\..\..\commonnbis\src\lib\util\computil.c" />
+    <ClCompile Include="..\..\..\commonnbis\src\lib\util\fatalerr.c" />
+    <ClCompile Include="..\..\..\commonnbis\src\lib\util\invbyte.c" />
+    <ClCompile Include="..\..\..\commonnbis\src\lib\util\invbytes.c" />
+    <ClCompile Include="..\..\..\commonnbis\src\lib\util\memalloc.c" />
+    <ClCompile Include="..\..\..\commonnbis\src\lib\util\ssxstats.c" />
+    <ClCompile Include="..\..\..\commonnbis\src\lib\util\syserr.c" />
+    <ClCompile Include="..\..\..\commonnbis\src\lib\util\ticks.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\commonnbis\src\lib\util\time.c" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
