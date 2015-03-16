@@ -1,0 +1,2 @@
+Microsoft Visual Studio 2010 solution and project files for NIST NBIS biometric library.
+This project is NOT related to the NIST organization in any way. It is just a port of the library (http://www.nist.gov/itl/iad/ig/nbis.cfm) to MS Visual Studio.
